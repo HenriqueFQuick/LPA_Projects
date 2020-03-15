@@ -53,7 +53,6 @@ int PRIM(int tamanho, int** matrizDistancia){
 int* percorreMatriz(int v, int **matriz, int *vertice, int qtd_Cidades, int* vetor){
 
     vertice[v] = 1;                                             //a cor do vertice atual passa a ser cinza
-    //cout << (char)(v+97) << ",";                                //printa o vertice (o + 97 eh pela tabela ascii)
     vetor[v] = v;
 
     for(int i = 0; i < qtd_Cidades; i++){ 
@@ -110,11 +109,9 @@ string* split(string str){
     string aux = "";
     int index = 0;
     for(int i = 0; i < str.length(); i++){
-        //cout << str[i] << "bbbbbb\n";
         if(!isspace(str[i])){
             aux += str[i];
         }else{
-            //cout << aux << " aaaaaaaa\n";
             vetor[index] = aux;
             aux = "";
             index++;
@@ -137,11 +134,8 @@ void acrescentaArestas(int** matriz, int qtd_Relacoes, string* vetorCidades, int
         string* vetor = split(str);
 
         cidade2 = vetor[1];
-        //cout << cidade2 << " ";
         preco = atoi(vetor[2].c_str());
-        //cout << preco << " ";
         cidade = vetor[0];
-        //cout << cidade << " ";
         int index1 = findString(vetorCidades, qtd_Cidades, cidade);
         int index2 = findString(vetorCidades, qtd_Cidades, cidade2);
 
