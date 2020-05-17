@@ -36,6 +36,15 @@ Project 7
     Url -> https://www.urionlinejudge.com.br/judge/pt/problems/view/2000
     Code -> adeildoDaOdonto.cpp
     
+Project 8
+    
+    Url -> https://www.urionlinejudge.com.br/judge/pt/problems/view/1088
+    Code -> bolhasEBaldes.cpp
+
+Project 9 
+    
+    Url -> https://onlinejudge.org/external/107/10700.pdf
+    Code -> camelTrading.cpp
     
   
 Test 1
